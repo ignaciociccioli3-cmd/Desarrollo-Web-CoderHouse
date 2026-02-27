@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutta Pizza | Pizzeria y empanadas</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="tp-header">
+        <nav class="navbar navbar-expand-lg tp-navbar" aria-label="Navegacion principal">
+            <div class="tp-container tp-nav-wrap">
+                <a class="navbar-brand tp-brand" href="index.html">
+                    <img class="tp-brand-logo" src="img/logo.png" alt="Logo de Tutta Pizza">
+                    <span class="tp-brand-copy">
+                        <span class="tp-brand-name">Tutta Pizza</span>
+                        <span class="tp-brand-tagline">Pizzas y empanadas a la piedra</span>
+                    </span>
+                </a>
+                <button class="navbar-toggler tp-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#tpMainNav" aria-controls="tpMainNav" aria-expanded="false" aria-label="Abrir menu principal">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse tp-navbar-collapse" id="tpMainNav">
+                    <ul class="navbar-nav tp-nav-list">
+                        <li class="nav-item"><a class="nav-link tp-nav-link active" href="index.html" aria-current="page">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link tp-nav-link" href="pages/menu.html">Menu</a></li>
+                        <li class="nav-item"><a class="nav-link tp-nav-link" href="pages/sucursales.html">Sucursales</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="tp-page-hero">
+            <div class="tp-container">
+                <h1>Nosotros</h1>
+                <p>Conoce la historia y la identidad de Tutta Pizza.</p>
+            </div>
+        </section>
+
+        <section class="tp-hero">
+            <div class="tp-container tp-hero-grid">
+                <article class="tp-hero-copy">
+                    <h1>Pizza a la piedra con oficio artesanal</h1>
+                    <p>
+                        En Tutta Pizza hacemos solo lo que mas nos gusta: pizzas y empanadas.
+                        Trabajamos con harinas seleccionadas, fermentacion lenta y un horno bien caliente,
+                        donde cada pizza se cocina directamente a la piedra para lograr bordes crocantes
+                        y un centro tierno. No buscamos atajos: preferimos el trabajo paciente,
+                        la masa bien desarrollada y los sabores honestos.
+                    </p>
+                </article>
+                <article class="tp-hero-card">
+                    <img class="tp-hero-image" src="img/historia.avif" alt="Interior historico de Tutta Pizza">
+                    <div class="tp-hero-card-copy">
+                        <h2>Mas de un siglo de horno encendido</h2>
+                        <p>
+                            Fundada por Enzo, Mario y Marco, la pizzeria mantiene su receta original
+                            y una cultura de trabajo enfocada en calidad y consistencia.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="tp-gallery">
+            <div class="tp-container">
+                <h2>Nuestro horno en accion</h2>
+                <div id="tpCarousel" class="carousel slide tp-carousel" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#tpCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#tpCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#tpCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="tp-carousel-img" src="img/muzza.jpeg" alt="Pizza muzzarella recien salida del horno">
+                            <div class="carousel-caption tp-carousel-caption">
+                                <h3>Muzzarella clasica</h3>
+                                <p>Salsa casera, queso de primera linea y coccion a la piedra.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="tp-carousel-img" src="img/fuga.avif" alt="Pizza fugazza con cebolla">
+                            <div class="carousel-caption tp-carousel-caption">
+                                <h3>Fugazzeta artesanal</h3>
+                                <p>Muzzarella, cebolla dorada y masa a la piedra con fermentacion lenta.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="tp-carousel-img" src="img/local1.jpeg" alt="Salon principal de la sucursal Palermo">
+                            <div class="carousel-caption tp-carousel-caption">
+                                <h3>Ambiente de barrio</h3>
+                                <p>Un espacio para compartir en familia con sabor tradicional.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#tpCarousel" data-bs-slide="prev" aria-label="Slide anterior">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#tpCarousel" data-bs-slide="next" aria-label="Slide siguiente">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="tp-story">
+            <div class="tp-container">
+                <h2>Nuestra historia</h2>
+                <div class="tp-story-grid">
+                    <article class="tp-story-item">
+                        <h3>Origen barrial</h3>
+                        <p>
+                            Fundada en 1923, nuestra pizzeria nacio como un local de barrio dedicado
+                            a la pizza a la piedra, en una epoca donde horno, masa y tiempo eran los protagonistas.
+                            Hoy seguimos siendo un punto de encuentro para familias y amigos.
+                        </p>
+                    </article>
+                    <article class="tp-story-item">
+                        <h3>Ingredientes y evolucion</h3>
+                        <p>
+                            Conservamos la receta original, pero con mejora continua en harinas,
+                            quesos y procesos de fermentacion. Asi mantenemos el caracter clasico
+                            con precision y consistencia para paladares actuales.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="tp-highlights">
+            <div class="tp-container">
+                <h2>Logros y reconocimientos</h2>
+                <div class="tp-card-grid">
+                    <article class="tp-card">
+                        <h3>Mejor pizzeria de CABA 2022</h3>
+                        <p>Premio otorgado por el circuito gastronomico porteno.</p>
+                    </article>
+                    <article class="tp-card">
+                        <h3>Mejor pizzeria de CABA 2024</h3>
+                        <p>Reconocimiento por calidad, servicio y consistencia.</p>
+                    </article>
+                    <article class="tp-card">
+                        <h3>Top 5 pizzerias locales</h3>
+                        <p>Destacada por guias de barrio y prensa especializada.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="tp-footer">
+        <div class="tp-container tp-footer-grid">
+            <p class="tp-footer-brand">Tutta Pizza | Pizzeria y empanadas en Buenos Aires</p>
+            <p>Seguinos en @tuttapizza.ba</p>
+            <div class="tp-footer-contact">
+                <a href="mailto:tuttapizza@gmail.com">tuttapizza@gmail.com</a>
+                <a href="tel:+5491112345678">+54 911 1234-5678</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
