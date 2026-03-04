@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pizzas YA - Entregable 2</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <h1>Pizzas YA</h1>
+      <p class="lead">
+        Elegí un producto, cantidad, modalidad de entrega y medio de pago.
+      </p>
+      <div class="cta">
+        <button class="btn" id="btn-iniciar" type="button">Iniciar pedido</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card" id="menu">
+      <h2>Menú básico</h2>
+      <ul class="menu">
+        <li><span>Empanadas</span><span>$900</span></li>
+        <li><span>Pizza Napolitana</span><span>$9500</span></li>
+        <li><span>Pizza Fugazzetta</span><span>$9800</span></li>
+        <li><span>Pizza de Jamón y Morrones</span><span>$10500</span></li>
+        <li><span>Pizza Muzzarella</span><span>$8500</span></li>
+      </ul>
+    </section>
+
+    <section class="card hidden" id="seccion-pedido">
+      <h2>Pedido</h2>
+      <form id="form-pedido">
+        <label for="select-producto">Producto</label>
+        <select id="select-producto"></select>
+
+        <label for="input-cantidad">Cantidad</label>
+        <input type="number" id="input-cantidad" min="1" value="1" />
+
+        <label for="select-entrega">Entrega</label>
+        <select id="select-entrega">
+          <option value="delivery">Delivery $1500</option>
+          <option value="takeaway">Takeaway</option>
+        </select>
+
+        <label for="select-pago">Pago</label>
+        <select id="select-pago">
+          <option value="efectivo">Efectivo (20% descuento)</option>
+          <option value="santander">Santander (10% descuento)</option>
+          <option value="transferencia">Transferencia (sin descuento)</option>
+        </select>
+        <p id="info-opciones"></p>
+
+        <button class="btn" type="submit">Agregar al carrito</button>
+      </form>
+    </section>
+
+    <div id="mensaje" aria-live="polite"></div>
+
+    <section class="card">
+      <h2>Carrito</h2>
+      <ul id="lista-carrito"></ul>
+
+      <div class="totales">
+        <p>Subtotal: <span id="out-subtotal">$0</span></p>
+        <p>Envío: <span id="out-envio">$0</span></p>
+        <p>Descuento: <span id="out-descuento">$0</span></p>
+        <p class="total-final">Total final: <span id="out-total">$0</span></p>
+      </div>
+
+      <div class="acciones-carrito">
+        <button class="btn btn-secundario" id="btn-vaciar" type="button">Vaciar carrito</button>
+        <button class="btn" id="btn-confirmar" type="button">Confirmar pedido</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="two-col">
+        <div>
+          <span class="tag">Opciones</span>
+          <h2>Modalidad de entrega</h2>
+          <p>Delivery o Take Away.</p>
+          <h2>Formas de pago</h2>
+          <p>
+            Efectivo (20% descuento)
+            Tarjeta Santander Río (10% descuento)
+            Transferencia
+          </p>
+        </div>
+        <div>
+          <span class="tag">Lugar para pedir</span>
+          <h2>Contacto</h2>
+          <p><strong>Pedidos:</strong> WhatsApp 11 0000 0000</p>
+          <p><strong>Teléfono:</strong> 0800 000 000</p>
+          <p><strong>Dirección:</strong> Calle Principal 123, Ciudad</p>
+          <p><strong>Horario:</strong> 19:00 a 00:30</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script defer src="js/app.js"></script>
+</body>
+</html>
