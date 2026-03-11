@@ -1,0 +1,262 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+@include respond(lg) {
+    section {
+        padding-block: 3rem;
+    }
+
+    .tp-navbar {
+        .tp-nav-wrap {
+            padding-block: 0.65rem;
+        }
+
+        .tp-brand-tagline {
+            display: none;
+        }
+
+        .tp-navbar-collapse {
+            margin-top: 0.75rem;
+            padding-top: 0.75rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .tp-nav-list {
+            width: 100%;
+            display: grid;
+        }
+
+        .tp-nav-link.nav-link {
+            border-radius: 12px;
+            text-align: center;
+        }
+    }
+
+    .tp-hero {
+        padding-top: 3.2rem;
+    }
+
+    .tp-hero-grid,
+    .tp-story-grid,
+    .tp-card-grid,
+    .tp-menu-grid,
+    .tp-branch-grid,
+    .tp-service-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .tp-menu-item--full {
+        grid-column: 1 / -1;
+    }
+
+    .tp-menu-item--split {
+        grid-template-columns: 1fr;
+    }
+
+    .tp-branch-photo {
+        height: 210px;
+    }
+
+    .tp-carousel-img {
+        height: 330px;
+    }
+
+    .tp-footer {
+        .tp-footer-grid {
+            grid-template-columns: 1fr;
+            text-align: center;
+        }
+
+        .tp-footer-contact {
+            align-items: center;
+        }
+    }
+}
+
+@include respond(md) {
+    body {
+        font-size: 15px;
+    }
+
+    h1 {
+        font-size: 1.95rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.02rem;
+    }
+
+    .tp-nav-link.nav-link,
+    .tp-page-hero p,
+    .tp-card p,
+    .tp-menu-item p,
+    .tp-service-card p,
+    .tp-branch-meta li,
+    .tp-footer p,
+    .tp-footer a {
+        font-size: 0.92rem;
+    }
+
+    .tp-container {
+        @include container-width($tp-gutter-mobile);
+    }
+
+    .tp-hero,
+    .tp-page-hero {
+        padding-top: 2.2rem;
+    }
+
+    .tp-hero {
+        .tp-container {
+            width: min(980px, calc(100% - #{$tp-gutter-mobile}));
+        }
+    }
+
+    .tp-hero-copy,
+    .tp-story-item,
+    .tp-card,
+    .tp-menu-item,
+    .tp-service-card {
+        padding: 1.2rem;
+    }
+
+    .tp-hero-grid,
+    .tp-story-grid,
+    .tp-card-grid,
+    .tp-menu-grid,
+    .tp-branch-grid,
+    .tp-service-grid,
+    .tp-menu-list {
+        grid-template-columns: 1fr;
+    }
+
+    .tp-branch-body {
+        padding: 0.95rem;
+        min-height: 0;
+    }
+
+    .tp-hero-card {
+        grid-template-rows: 170px auto;
+    }
+
+    .tp-hero-image {
+        min-height: 170px;
+    }
+
+    .tp-branch-photo {
+        height: 160px;
+    }
+
+    .tp-branch-meta li {
+        grid-template-columns: 82px 1fr;
+    }
+
+    .tp-menu-photo,
+    .tp-carousel-img {
+        height: 165px;
+    }
+
+    .tp-carousel-caption {
+        left: 10%;
+        right: 10%;
+        bottom: 1.2rem;
+        max-width: 100%;
+
+        p {
+            font-size: 0.88rem;
+        }
+    }
+
+    .tp-brand-logo {
+        width: 48px;
+        height: 48px;
+    }
+
+    .tp-brand-name {
+        font-size: 1rem;
+    }
+}
+
+@include respond(sm) {
+    body {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    h1 {
+        font-size: 1.58rem;
+    }
+
+    h2 {
+        font-size: 1.28rem;
+    }
+
+    h3 {
+        font-size: 0.96rem;
+    }
+
+    .tp-nav-link.nav-link {
+        font-size: 0.84rem;
+        padding: 6px 10px;
+    }
+
+    .tp-page-hero p,
+    .tp-card p,
+    .tp-menu-item p,
+    .tp-service-card p,
+    .tp-branch-meta li,
+    .tp-footer p,
+    .tp-footer a,
+    .tp-price-text {
+        font-size: 0.84rem;
+    }
+
+    .tp-hero-copy,
+    .tp-story-item,
+    .tp-card,
+    .tp-menu-item,
+    .tp-service-card {
+        padding: 1rem;
+    }
+
+    .tp-hero-card {
+        grid-template-rows: 130px auto;
+    }
+
+    .tp-hero-image {
+        min-height: 130px;
+    }
+
+    .tp-branch-photo {
+        height: 130px;
+    }
+
+    .tp-menu-photo,
+    .tp-carousel-img {
+        height: 130px;
+    }
+
+    .tp-branch-meta li {
+        grid-template-columns: 1fr;
+        gap: 0.15rem;
+
+        span {
+            font-size: 0.72rem;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+        }
+    }
+
+    .tp-carousel-caption {
+        left: 12%;
+        right: 12%;
+
+        p {
+            display: none;
+        }
+    }
+}

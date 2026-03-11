@@ -1,0 +1,35 @@
+@use "variables" as *;
+
+@mixin container-width($gutter: $tp-gutter-desktop) {
+    width: min($tp-max-width, calc(100% - #{$gutter}));
+    margin-inline: auto;
+}
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == lg {
+        @media (max-width: $bp-lg) {
+            @content;
+        }
+    } @else if $breakpoint == md {
+        @media (max-width: $bp-md) {
+            @content;
+        }
+    } @else if $breakpoint == sm {
+        @media (max-width: $bp-sm) {
+            @content;
+        }
+    }
+}
+
+@mixin panel-hover($offset: -4px, $shadow: 0 18px 28px rgba(42, 31, 21, 0.14)) {
+    transition: transform $tp-transition-fast, box-shadow $tp-transition-fast;
+
+    &:hover {
+        transform: translateY($offset);
+        box-shadow: $shadow;
+    }
+}
+
+@mixin fade-up($delay: 0s, $duration: 0.7s) {
+    animation: tpFadeInUp $duration cubic-bezier(0.16, 1, 0.3, 1) $delay both;
+}

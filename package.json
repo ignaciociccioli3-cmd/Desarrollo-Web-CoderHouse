@@ -1,0 +1,12 @@
+{
+  "name": "tutta-pizza",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build:css": "sass --no-error-css --style=expanded --source-map scss/style.scss css/style.css",
+    "watch:css": "sass --watch --style=expanded scss/style.scss css/style.css"
+  },
+  "devDependencies": {
+    "sass": "^1.93.2"
+  }
+}

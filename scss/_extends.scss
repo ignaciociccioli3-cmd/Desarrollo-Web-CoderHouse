@@ -1,0 +1,25 @@
+@use "variables" as *;
+
+%tp-panel {
+    border: 1px solid $tp-line;
+    border-radius: $tp-radius-lg;
+    background: $tp-surface;
+    box-shadow: $tp-shadow-card;
+}
+
+%tp-bullet-item {
+    position: relative;
+    padding-left: 1rem;
+    color: $tp-ink;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0.6em;
+        left: 0;
+        width: 0.4rem;
+        height: 0.4rem;
+        border-radius: 50%;
+        background: $tp-primary;
+    }
+}
