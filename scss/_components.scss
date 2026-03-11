@@ -252,12 +252,3 @@
         font-size: 0.92rem;
     }
 }
-
-@for $i from 1 through 6 {
-    .tp-card-grid .tp-card:nth-child(#{$i}),
-    .tp-menu-grid .tp-menu-item:nth-child(#{$i}),
-    .tp-branch-grid .tp-branch-card:nth-child(#{$i}),
-    .tp-service-grid .tp-service-card:nth-child(#{$i}) {
-        animation-delay: $i * 0.06s;
-    }
-}
