@@ -3,28 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tutta Pizza | Pizzeria y empanadas</title>
+    <title>Tutta Pizza | Pizzería artesanal en Buenos Aires</title>
+    <meta name="description" content="Tutta Pizza: pizzas a la piedra y empanadas artesanales en Buenos Aires. Conocé el menú, promociones, sucursales y vías de contacto.">
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Tutta Pizza",
+      "servesCuisine": "Pizza",
+      "telephone": "+54 9 11 1234-5678",
+      "email": "tuttapizza@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. Dorrego 1122",
+        "addressLocality": "Buenos Aires",
+        "addressCountry": "AR"
+      },
+      "openingHours": [
+        "Mo-Su 11:00-00:00"
+      ]
+    }
+    </script>
 </head>
 <body>
     <header class="tp-header">
-        <nav class="navbar navbar-expand-lg tp-navbar" aria-label="Navegacion principal">
+        <nav class="navbar navbar-expand-lg tp-navbar" aria-label="Navegación principal">
             <div class="tp-container tp-nav-wrap">
-                <a class="navbar-brand tp-brand" href="index.html">
+                <a class="navbar-brand tp-brand" href="index.html" aria-label="Ir al inicio de Tutta Pizza">
                     <img class="tp-brand-logo" src="img/logo.png" alt="Logo de Tutta Pizza">
                     <span class="tp-brand-copy">
                         <span class="tp-brand-name">Tutta Pizza</span>
                         <span class="tp-brand-tagline">Pizzas y empanadas a la piedra</span>
                     </span>
                 </a>
-                <button class="navbar-toggler tp-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#tpMainNav" aria-controls="tpMainNav" aria-expanded="false" aria-label="Abrir menu principal">
+                <button class="navbar-toggler tp-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#tpMainNav" aria-controls="tpMainNav" aria-expanded="false" aria-label="Abrir menú principal">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse tp-navbar-collapse" id="tpMainNav">
                     <ul class="navbar-nav tp-nav-list">
                         <li class="nav-item"><a class="nav-link tp-nav-link active" href="index.html" aria-current="page">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link tp-nav-link" href="pages/menu.html">Menu</a></li>
+                        <li class="nav-item"><a class="nav-link tp-nav-link" href="pages/menu.html">Menú</a></li>
                         <li class="nav-item"><a class="nav-link tp-nav-link" href="pages/sucursales.html">Sucursales</a></li>
+                        <li class="nav-item"><a class="nav-link tp-nav-link" href="pages/promociones.html">Promociones</a></li>
+                        <li class="nav-item"><a class="nav-link tp-nav-link" href="pages/contacto.html">Contacto</a></li>
                     </ul>
                 </div>
             </div>
@@ -32,32 +57,30 @@
     </header>
 
     <main>
-        <section class="tp-page-hero">
-            <div class="tp-container">
-                <h1>Nosotros</h1>
-                <p>Conoce la historia y la identidad de Tutta Pizza.</p>
-            </div>
-        </section>
-
         <section class="tp-hero">
             <div class="tp-container tp-hero-grid">
                 <article class="tp-hero-copy">
-                    <h1>Pizza a la piedra con oficio artesanal</h1>
+                    <p class="tp-eyebrow">Desde 1923, horno a la piedra en Buenos Aires</p>
+                    <h1>Tutta Pizza: sabor artesanal, barrio y tradición</h1>
                     <p>
-                        En Tutta Pizza hacemos solo lo que mas nos gusta: pizzas y empanadas.
-                        Trabajamos con harinas seleccionadas, fermentacion lenta y un horno bien caliente,
-                        donde cada pizza se cocina directamente a la piedra para lograr bordes crocantes
-                        y un centro tierno. No buscamos atajos: preferimos el trabajo paciente,
-                        la masa bien desarrollada y los sabores honestos.
+                        En Tutta Pizza hacemos lo que mejor sabemos: pizzas y empanadas con fermentación lenta,
+                        ingredientes seleccionados y cocción a la piedra. Cada pedido sale con el mismo estándar
+                        que nos acompaña hace décadas.
                     </p>
+                    <div class="tp-home-actions d-flex flex-wrap gap-2 mt-3" aria-label="Accesos rápidos">
+                        <a class="btn tp-cta" href="pages/menu.html">Ver menú</a>
+                        <a class="btn btn-outline-light tp-cta-secondary" href="pages/promociones.html">Promociones</a>
+                        <a class="btn btn-outline-light tp-cta-secondary" href="pages/sucursales.html">Sucursales</a>
+                        <a class="btn btn-outline-light tp-cta-secondary" href="pages/contacto.html">Contacto</a>
+                    </div>
                 </article>
                 <article class="tp-hero-card">
-                    <img class="tp-hero-image" src="img/historia.avif" alt="Interior historico de Tutta Pizza">
+                    <img class="tp-hero-image" src="img/historia.avif" alt="Equipo de Tutta Pizza trabajando en el horno" loading="lazy">
                     <div class="tp-hero-card-copy">
-                        <h2>Mas de un siglo de horno encendido</h2>
+                        <h2>Una pizzería con oficio real</h2>
                         <p>
-                            Fundada por Enzo, Mario y Marco, la pizzeria mantiene su receta original
-                            y una cultura de trabajo enfocada en calidad y consistencia.
+                            Nuestra cocina combina técnica, tiempos cuidados y atención cercana.
+                            Trabajamos cada masa para lograr bordes crocantes, centro tierno y sabor equilibrado.
                         </p>
                     </div>
                 </article>
@@ -66,7 +89,7 @@
 
         <section class="tp-gallery">
             <div class="tp-container">
-                <h2>Nuestro horno en accion</h2>
+                <h2>Nuestro horno en acción</h2>
                 <div id="tpCarousel" class="carousel slide tp-carousel" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#tpCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -75,24 +98,24 @@
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="tp-carousel-img" src="img/muzza.jpeg" alt="Pizza muzzarella recien salida del horno">
+                            <img class="tp-carousel-img" src="img/muzza.jpeg" alt="Pizza muzzarella recién salida del horno">
                             <div class="carousel-caption tp-carousel-caption">
-                                <h3>Muzzarella clasica</h3>
-                                <p>Salsa casera, queso de primera linea y coccion a la piedra.</p>
+                                <h3>Muzzarella clásica</h3>
+                                <p>Salsa casera, queso de primera línea y cocción a la piedra.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img class="tp-carousel-img" src="img/fuga.avif" alt="Pizza fugazza con cebolla">
+                            <img class="tp-carousel-img" src="img/fuga.avif" alt="Pizza fugazza con cebolla" loading="lazy">
                             <div class="carousel-caption tp-carousel-caption">
                                 <h3>Fugazzeta artesanal</h3>
-                                <p>Muzzarella, cebolla dorada y masa a la piedra con fermentacion lenta.</p>
+                                <p>Muzzarella, cebolla dorada y masa de larga fermentación.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img class="tp-carousel-img" src="img/local1.jpeg" alt="Salon principal de la sucursal Palermo">
+                            <img class="tp-carousel-img" src="img/local1.jpeg" alt="Salón principal de la sucursal Palermo" loading="lazy">
                             <div class="carousel-caption tp-carousel-caption">
                                 <h3>Ambiente de barrio</h3>
-                                <p>Un espacio para compartir en familia con sabor tradicional.</p>
+                                <p>Un espacio cálido para compartir en familia y con amigos.</p>
                             </div>
                         </div>
                     </div>
@@ -113,17 +136,15 @@
                     <article class="tp-story-item">
                         <h3>Origen barrial</h3>
                         <p>
-                            Fundada en 1923, nuestra pizzeria nacio como un local de barrio dedicado
-                            a la pizza a la piedra, en una epoca donde horno, masa y tiempo eran los protagonistas.
-                            Hoy seguimos siendo un punto de encuentro para familias y amigos.
+                            Nacimos como una pizzería de barrio y hoy seguimos siendo ese punto de encuentro
+                            para almuerzos de semana, cenas de viernes y reuniones familiares.
                         </p>
                     </article>
                     <article class="tp-story-item">
-                        <h3>Ingredientes y evolucion</h3>
+                        <h3>Calidad consistente</h3>
                         <p>
-                            Conservamos la receta original, pero con mejora continua en harinas,
-                            quesos y procesos de fermentacion. Asi mantenemos el caracter clasico
-                            con precision y consistencia para paladares actuales.
+                            Mantenemos la receta original con mejoras en harinas, quesos y procesos.
+                            El objetivo es simple: que cada pizza llegue siempre a la misma altura.
                         </p>
                     </article>
                 </div>
@@ -132,19 +153,19 @@
 
         <section class="tp-highlights">
             <div class="tp-container">
-                <h2>Logros y reconocimientos</h2>
+                <h2>¿Qué podés resolver hoy en Tutta Pizza?</h2>
                 <div class="tp-card-grid">
                     <article class="tp-card">
-                        <h3>Mejor pizzeria de CABA 2022</h3>
-                        <p>Premio otorgado por el circuito gastronomico porteno.</p>
+                        <h3>Pedido rápido para llevar</h3>
+                        <p>Pedí por teléfono y retiralo en sucursal con horario coordinado.</p>
                     </article>
                     <article class="tp-card">
-                        <h3>Mejor pizzeria de CABA 2024</h3>
-                        <p>Reconocimiento por calidad, servicio y consistencia.</p>
+                        <h3>Cena completa con promos</h3>
+                        <p>Combinaciones de pizza y empanadas pensadas para compartir.</p>
                     </article>
                     <article class="tp-card">
-                        <h3>Top 5 pizzerias locales</h3>
-                        <p>Destacada por guias de barrio y prensa especializada.</p>
+                        <h3>Atención directa</h3>
+                        <p>Equipo propio para responder consultas y gestionar pedidos.</p>
                     </article>
                 </div>
             </div>
@@ -153,11 +174,18 @@
 
     <footer class="tp-footer">
         <div class="tp-container tp-footer-grid">
-            <p class="tp-footer-brand">Tutta Pizza | Pizzeria y empanadas en Buenos Aires</p>
-            <p>Seguinos en @tuttapizza.ba</p>
+            <p class="tp-footer-brand">Tutta Pizza | Pizzería y empanadas en Buenos Aires</p>
+            <nav aria-label="Navegación secundaria" class="tp-footer-nav">
+                <a href="index.html">Inicio</a>
+                <a href="pages/menu.html">Menú</a>
+                <a href="pages/sucursales.html">Sucursales</a>
+                <a href="pages/promociones.html">Promociones</a>
+                <a href="pages/contacto.html">Contacto</a>
+            </nav>
             <div class="tp-footer-contact">
                 <a href="mailto:tuttapizza@gmail.com">tuttapizza@gmail.com</a>
-                <a href="tel:+5491112345678">+54 911 1234-5678</a>
+                <a href="tel:+5491112345678">+54 9 11 1234-5678</a>
+                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Visitar Instagram de Tutta Pizza">Instagram</a>
             </div>
         </div>
     </footer>

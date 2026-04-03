@@ -3,28 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tutta Pizza | Menu</title>
+    <title>Tutta Pizza | Menú de pizzas y empanadas</title>
+    <meta name="description" content="Conocé el menú de Tutta Pizza: pizzas clásicas y especiales, empanadas artesanales y opciones para compartir.">
+    <link rel="icon" type="image/png" href="../img/logo.png">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <header class="tp-header">
-        <nav class="navbar navbar-expand-lg tp-navbar" aria-label="Navegacion principal">
+        <nav class="navbar navbar-expand-lg tp-navbar" aria-label="Navegación principal">
             <div class="tp-container tp-nav-wrap">
-                <a class="navbar-brand tp-brand" href="../index.html">
+                <a class="navbar-brand tp-brand" href="../index.html" aria-label="Ir al inicio de Tutta Pizza">
                     <img class="tp-brand-logo" src="../img/logo.png" alt="Logo de Tutta Pizza">
                     <span class="tp-brand-copy">
                         <span class="tp-brand-name">Tutta Pizza</span>
                         <span class="tp-brand-tagline">Pizzas y empanadas a la piedra</span>
                     </span>
                 </a>
-                <button class="navbar-toggler tp-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#tpMainNav" aria-controls="tpMainNav" aria-expanded="false" aria-label="Abrir menu principal">
+                <button class="navbar-toggler tp-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#tpMainNav" aria-controls="tpMainNav" aria-expanded="false" aria-label="Abrir menú principal">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse tp-navbar-collapse" id="tpMainNav">
                     <ul class="navbar-nav tp-nav-list">
                         <li class="nav-item"><a class="nav-link tp-nav-link" href="../index.html">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link tp-nav-link active" href="menu.html" aria-current="page">Menu</a></li>
+                        <li class="nav-item"><a class="nav-link tp-nav-link active" href="menu.html" aria-current="page">Menú</a></li>
                         <li class="nav-item"><a class="nav-link tp-nav-link" href="sucursales.html">Sucursales</a></li>
+                        <li class="nav-item"><a class="nav-link tp-nav-link" href="promociones.html">Promociones</a></li>
+                        <li class="nav-item"><a class="nav-link tp-nav-link" href="contacto.html">Contacto</a></li>
                     </ul>
                 </div>
             </div>
@@ -34,31 +40,31 @@
     <main>
         <section class="tp-page-hero">
             <div class="tp-container">
-                <h1>Nuestro menu</h1>
-                <p>Especialidad en pizzas a la piedra y empanadas artesanales.</p>
+                <h1>Nuestro menú</h1>
+                <p>Especialidad en pizzas a la piedra y empanadas artesanales hechas en el día.</p>
             </div>
         </section>
 
         <section class="tp-menu-section">
             <div class="tp-container">
-                <h2>Pizzas comunes</h2>
+                <h2>Pizzas clásicas</h2>
                 <div class="tp-menu-grid">
                     <article class="tp-menu-item">
-                        <img class="tp-menu-photo" src="../img/muzza.jpeg" alt="Pizza muzzarella recien horneada">
+                        <img class="tp-menu-photo" src="../img/muzza.jpeg" alt="Pizza muzzarella recién horneada" loading="lazy">
                         <h3>Muzzarella</h3>
-                        <p>Salsa de tomate, muzzarella y oregano.</p>
+                        <p>Salsa de tomate, muzzarella y orégano.</p>
                         <span class="tp-price-text">$ 30.000</span>
                     </article>
                     <article class="tp-menu-item">
-                        <img class="tp-menu-photo" src="../img/napo.jpeg" alt="Pizza napolitana con tomate fresco">
+                        <img class="tp-menu-photo" src="../img/napo.jpeg" alt="Pizza napolitana con tomate fresco" loading="lazy">
                         <h3>Napolitana</h3>
                         <p>Tomate, muzzarella, ajo y rodajas de tomate fresco.</p>
                         <span class="tp-price-text">$ 34.000</span>
                     </article>
                     <article class="tp-menu-item">
-                        <img class="tp-menu-photo" src="../img/fuga.avif" alt="Pizza fugazza con cebolla">
+                        <img class="tp-menu-photo" src="../img/fuga.avif" alt="Pizza fugazza con cebolla" loading="lazy">
                         <h3>Fugazza</h3>
-                        <p>Cebolla blanca, oregano y aceite de oliva.</p>
+                        <p>Cebolla blanca, orégano y aceite de oliva.</p>
                         <span class="tp-price-text">$ 34.000</span>
                     </article>
                 </div>
@@ -70,19 +76,19 @@
                 <h2>Pizzas especiales</h2>
                 <div class="tp-menu-grid">
                     <article class="tp-menu-item">
-                        <img class="tp-menu-photo" src="../img/jamon_morron.webp" alt="Pizza jamon y morron">
-                        <h3>Jamon y morron</h3>
-                        <p>Muzzarella, jamon cortado fino y morron asado.</p>
+                        <img class="tp-menu-photo" src="../img/jamon_morron.webp" alt="Pizza de jamón y morrón" loading="lazy">
+                        <h3>Jamón y morrón</h3>
+                        <p>Muzzarella, jamón cortado fino y morrón asado.</p>
                         <span class="tp-price-text">$ 38.000</span>
                     </article>
                     <article class="tp-menu-item">
-                        <img class="tp-menu-photo" src="../img/calabresa.jpeg" alt="Pizza calabresa con longaniza">
+                        <img class="tp-menu-photo" src="../img/calabresa.jpeg" alt="Pizza calabresa con longaniza" loading="lazy">
                         <h3>Calabresa</h3>
-                        <p>Muzzarella, longaniza, morron asado y aceitunas.</p>
+                        <p>Muzzarella, longaniza, morrón asado y aceitunas.</p>
                         <span class="tp-price-text">$ 36.500</span>
                     </article>
                     <article class="tp-menu-item">
-                        <img class="tp-menu-photo" src="../img/4quesos.webp" alt="Pizza cuatro quesos">
+                        <img class="tp-menu-photo" src="../img/4quesos.webp" alt="Pizza cuatro quesos" loading="lazy">
                         <h3>Cuatro quesos</h3>
                         <p>Muzzarella, provolone, roquefort y parmesano.</p>
                         <span class="tp-price-text">$ 39.000</span>
@@ -99,11 +105,12 @@
                         <div class="tp-empanada-copy">
                             <h3>Sabores disponibles</h3>
                             <p class="tp-unit-price">Precio por unidad: <span class="tp-price-text">$ 4.500</span></p>
-                            <p>Docena surtida con descuento para llevar o delivery propio.</p>
+                            <p>Docena surtida con descuento para take away y delivery propio.</p>
+                            <a href="promociones.html" class="btn tp-cta mt-2">Ver promociones vigentes</a>
                         </div>
                         <ul class="tp-menu-list">
                             <li>Carne cortada a cuchillo</li>
-                            <li>Jamon y queso</li>
+                            <li>Jamón y queso</li>
                             <li>Humita</li>
                             <li>Pollo suave</li>
                             <li>Verdura y queso</li>
@@ -119,11 +126,18 @@
 
     <footer class="tp-footer">
         <div class="tp-container tp-footer-grid">
-            <p class="tp-footer-brand">Tutta Pizza | Pizzeria y empanadas en Buenos Aires</p>
-            <p>Seguinos en @tuttapizza.ba</p>
+            <p class="tp-footer-brand">Tutta Pizza | Pizzería y empanadas en Buenos Aires</p>
+            <nav aria-label="Navegación secundaria" class="tp-footer-nav">
+                <a href="../index.html">Inicio</a>
+                <a href="menu.html">Menú</a>
+                <a href="sucursales.html">Sucursales</a>
+                <a href="promociones.html">Promociones</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
             <div class="tp-footer-contact">
                 <a href="mailto:tuttapizza@gmail.com">tuttapizza@gmail.com</a>
-                <a href="tel:+5491112345678">+54 911 1234-5678</a>
+                <a href="tel:+5491112345678">+54 9 11 1234-5678</a>
+                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Visitar Instagram de Tutta Pizza">Instagram</a>
             </div>
         </div>
     </footer>

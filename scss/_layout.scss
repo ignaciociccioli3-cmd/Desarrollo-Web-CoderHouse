@@ -239,3 +239,28 @@
         }
     }
 }
+
+.tp-promo-section,
+.tp-contact-section {
+    padding-top: 1.2rem;
+}
+
+.tp-home-actions {
+    margin-top: 0.9rem;
+}
+
+.tp-eyebrow {
+    display: inline-block;
+    margin-bottom: 0.6rem;
+    font-weight: 700;
+    color: $tp-primary-dark;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-size: 0.82rem;
+}
+
+.tp-footer-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.55rem 1rem;
+}

@@ -252,3 +252,98 @@
         font-size: 0.92rem;
     }
 }
+
+.tp-cta,
+.tp-cta.btn {
+    background: $tp-primary;
+    border: 1px solid $tp-primary;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 999px;
+    padding: 0.5rem 1rem;
+    transition: $tp-transition-fast;
+
+    &:hover,
+    &:focus {
+        background: $tp-primary-dark;
+        border-color: $tp-primary-dark;
+        color: #fff;
+    }
+}
+
+.tp-cta-secondary {
+    border-radius: 999px;
+    border-color: rgba(255, 255, 255, 0.6);
+    color: #fff;
+
+    &:hover,
+    &:focus {
+        color: #fff;
+        border-color: #fff;
+        background: rgba(255, 255, 255, 0.18);
+    }
+}
+
+.tp-promo-card {
+    border: 1px solid $tp-line;
+    border-radius: $tp-radius-lg;
+    box-shadow: $tp-shadow-card;
+    background: linear-gradient(180deg, #fffaf3 0%, #fff4e6 100%);
+
+    p {
+        color: $tp-muted;
+    }
+}
+
+.tp-pill {
+    font-size: 0.73rem;
+    letter-spacing: 0.02em;
+}
+
+.tp-contact-form-wrap {
+    @extend %tp-panel;
+    padding: 1.4rem;
+
+    p {
+        color: $tp-muted;
+    }
+}
+
+.tp-contact-list {
+    display: grid;
+    gap: 0.55rem;
+
+    li {
+        color: $tp-muted;
+    }
+
+    a {
+        color: $tp-primary-dark;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+    }
+}
+
+.tp-faq {
+    .accordion-item {
+        border: 1px solid $tp-line;
+        border-radius: 12px;
+        overflow: hidden;
+        margin-bottom: 0.6rem;
+    }
+
+    .accordion-button {
+        font-weight: 700;
+    }
+}
+
+.tp-footer {
+    .tp-footer-nav a {
+        transition: color $tp-transition-fast;
+
+        &:hover,
+        &:focus {
+            color: #ffb295;
+        }
+    }
+}
